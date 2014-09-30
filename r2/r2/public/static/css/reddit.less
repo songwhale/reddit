@@ -697,6 +697,10 @@ ul.flat-vert {text-align: left;}
     text-align: center;
 }
 
+.account-activity-box a {
+    color: #77205F;
+}
+
 #account-activity table {
     margin: 2em 0 0 2em;
     width: 45em;
@@ -1222,15 +1226,17 @@ body.with-listing-chooser.explore-page #header .pagename {
 
     a {
         padding: 1px 4px;
-        background: #eee;
-        border: 1px solid #ddd;
+        background: #F3F3F3;
+        border: solid #77205F 1px;
         border-radius: 3px;
         font-weight: bold;
+        color: #77205F;
     }
 
     a:hover {
-        background: #f0f0f0;
-        border: 1px solid #82A6C9;
+        background: #77205F;
+        border: 1px solid #77205F;
+        color: #FFF;
     }
 
     a:active {
@@ -1247,6 +1253,7 @@ body.with-listing-chooser.explore-page #header .pagename {
 }
 
 .next-suggestions {
+    display: none;
     margin-left: 1.5em;
 
     a {
