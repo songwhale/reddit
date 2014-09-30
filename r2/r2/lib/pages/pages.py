@@ -731,7 +731,7 @@ class Reddit(Templated):
 
         more_buttons = []
 
-        if c.user_is_loggedin:
+        if False:
             if c.user_is_sponsor:
                 sponsor_button = NavButton(
                     menu.sponsor, dest='/sponsor', sr_path=False)
