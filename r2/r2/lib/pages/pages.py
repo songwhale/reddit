@@ -708,17 +708,13 @@ class Reddit(Templated):
         if c.site == Friends:
             main_buttons = [NamedButton('new', dest='', aliases=['/hot']),
                             NamedButton('comments'),
-                            NamedButton('gilded'),
                             ]
         else:
             main_buttons = [NamedButton('hot', dest='', aliases=['/hot']),
                             NamedButton('new'),
-                            NamedButton('rising'),
-                            NamedButton('controversial'),
-                            NamedButton('top'),
                             ]
 
-            if not isinstance(c.site, DomainSR):
+            if False:
                 main_buttons.append(NamedButton('gilded',
                                                 aliases=['/comments/gilded']))
 
