@@ -568,7 +568,7 @@ class Reddit(Templated):
                             submit_buttons.add("self")
                             mod_self_override = True
 
-                if "link" in submit_buttons:
+                if False:
                     css_class = "submit submit-link"
                     if mod_link_override:
                         css_class += " mod-override"
