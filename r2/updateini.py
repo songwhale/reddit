@@ -25,6 +25,9 @@ from ConfigParser import MissingSectionHeaderError
 from StringIO import StringIO
 import sys
 
+import pyximport
+pyximport.install()
+
 from r2.lib.utils import parse_ini_file
 
 HEADER = '''
