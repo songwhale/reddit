@@ -726,7 +726,7 @@ class Reddit(Templated):
                 if not g.disable_wiki:
                     main_buttons.append(NavButton('wiki', 'wiki'))
 
-            if isinstance(c.site, (Subreddit, DefaultSR, MultiReddit)):
+            if False:
                 main_buttons.append(NavButton(menu.promoted, 'ads'))
 
         more_buttons = []
