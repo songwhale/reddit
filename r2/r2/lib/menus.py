@@ -504,8 +504,8 @@ class SortMenu(NavMenu):
     button_cls = QueryButton
 
     # these are _ prefixed to avoid colliding with NavMenu attributes
-    _default = 'hot'
-    _options = ('hot', 'new', 'top', 'old', 'controversial')
+    _default = 'important'
+    _options = ('important', 'new')
     _type = 'lightdrop'
     _title = N_("sorted by")
 
