@@ -44,7 +44,7 @@ class MenuHandler(StringHandler):
             return getattr(plurals, attr)
 
 # translation strings for every menu on the site
-menu =   MenuHandler(hot          = _('hot'),
+menu =   MenuHandler(hot          = _('important'),
                      new          = _('new'),
                      old          = _('old'),
                      ups          = _('ups'),
@@ -504,8 +504,8 @@ class SortMenu(NavMenu):
     button_cls = QueryButton
 
     # these are _ prefixed to avoid colliding with NavMenu attributes
-    _default = 'important'
-    _options = ('important', 'new')
+    _default = 'hot'
+    _options = ('hot', 'new', 'top', 'old', 'controversial')
     _type = 'lightdrop'
     _title = N_("sorted by")
 
