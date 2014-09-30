@@ -505,7 +505,7 @@ class SortMenu(NavMenu):
 
     # these are _ prefixed to avoid colliding with NavMenu attributes
     _default = 'hot'
-    _options = ('hot', 'new', 'top', 'old', 'controversial')
+    _options = ('hot', 'new')
     _type = 'lightdrop'
     _title = N_("sorted by")
 
@@ -552,14 +552,13 @@ class SortMenu(NavMenu):
 
 class ProfileSortMenu(SortMenu):
     _default = 'new'
-    _options = ('hot', 'new', 'top', 'controversial')
+    _options = ('hot', 'new')
 
 
 class CommentSortMenu(SortMenu):
     """Sort menu for comments pages"""
-    _default = 'confidence'
-    _options = ('confidence', 'top', 'new', 'hot', 'controversial', 'old',
-                 'random')
+    _default = 'hot'
+    _options = ('hot', 'new')
     hidden_options = ('random',)
     button_cls = PostButton
 
@@ -578,7 +577,7 @@ class SearchSortMenu(SortMenu):
 class RecSortMenu(SortMenu):
     """Sort menu for recommendation page"""
     _default = 'new'
-    _options = ('hot', 'new', 'top', 'controversial', 'relevance')
+    _options = ('hot', 'new')
 
 
 class KindMenu(SortMenu):
@@ -627,8 +626,8 @@ class JsNavMenu(NavMenu):
 # --------------------
 # TODO: move to admin area
 class AdminReporterMenu(SortMenu):
-    default = 'top'
-    options = ('hot', 'new', 'top')
+    default = 'hot'
+    options = ('hot', 'new')
 
 class AdminKindMenu(KindMenu):
     options = ('all', 'links', 'comments', 'spam', 'autobanned')
